@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid;
+            padding: 3px;
+        }
+
+        #header {
+            height: 100px;
+            width: 100%;
+            border: 1px solid;
+            text-shadow: 5px 10px 5px;
+            color: pink;
+            text-align: center;
+            line-height: 90px;
+        }
+
+        #menu {
+            height: 50px;
+            width: 100%;
+            border: 1px ;
+            background-color: pink;
+        }
+
+        #noidung {
+            height: 550px;
+            width: 100%;
+            border: 1px solid;
+        }
+
+        #footer {
+            height: 95px;
+            width: 100%;
+            border: 1px;
+            background-color: pink;
+            margin:0 auto ;
+            padding:3px;
+        }
+
+        #noidung1 {
+            height: 100%;
+            width: 20%;
+            border: 1px;
+            float: left;
+            border-radius: 15px;
+        }
+
+        #noidung1 ul li a {
+            display: block;
+            background-color: pink;
+            color: white;
+            border-radius: 15px;
+            padding: 3px;
+        }
+
+        #noidung1 ul {
+            list-style: none;
+        }
+
+        #noidung ul li {
+            margin-bottom: 10px;
+        }
+
+        #noidung2 {
+            height: 100%;
+            width: 50%;
+            border: 1px;
+            float: left;
+            padding: 3px;
+        }
+
+        #noidung2 ul {
+            padding-left: 70px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        #noidung3 {
+            height: 100%;
+            width: 30%;
+            border: 1px;
+            float: left;
+        }
+
+        #noidung1 img {
+            width: 100%;
+            /* Ôm trọn chiều rộng của cột */
+            height: 120px;
+            /* Cố định chiều cao */
+            margin-top: 15px;
+            /* Cách danh sách nút menu phía trên */
+            border-radius: 50%;
+            /* Bo tròn 50% để biến hình chữ nhật thành OVAL */
+            box-shadow: 5px 10px 5px;
+            color: pink;
+        }
+
+        #menu1 {
+            height: 100%;
+            width: 25%;
+            float: left;
+            line-height: 48px;
+        }
+
+        #menu1 a {
+            margin-left: 170px;
+        }
+
+        #menu2 {
+            height: 100%;
+            width: 50%;
+            float: left;
+            line-height: 48px;
+        }
+
+        #menu2 a {
+            margin: 5px right;
+        }
+
+        #menu3 {
+            height: 100%;
+            width: 25%;
+            float: left;
+            line-height: 48px;
+        }
+
+        .khungnoidung2 {
+            padding: 5px;
+            text-align: center;
+            background-color: pink;
+            color: red;
+            width: 300px;
+            margin: 0 auto;
+            font-size: 23px;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .khungnoidung3 {
+            text-align: center;
+            padding: 5px;
+            text-transform: uppercase;
+            color: red;
+            margin: 0 auto;
+            font-size: 23px;
+            background-color: pink;
+            width: 300px;
+            letter-spacing: 10px;
+            font-weight: bold;
+        }
+        .khungnoidung4 {
+            text-align: center;
+            padding: 5px;
+            text-transform: uppercase;
+            color: red;
+            margin: 0 auto;
+            font-size: 23px;
+            background-color: pink;
+            width: 300px;
+            letter-spacing: 10px;
+            font-weight: bold;
+        }
+        .khungevent{
+            background-color: black;
+            height:95%;
+            width: 100%;
+            margin-bottom: 50px;
+            margin-top:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <h1>Example Cafe Menu</h1>
+        </div>
+        <div id="menu">
+            <div id="menu1">
+                <a href="#" style="color:white">&#9750;</a>
+            </div>
+            <div id="menu2">
+                <a href="#" style="color:white">STARTER</a> |
+                <a href="# " style="color:white">MAIN COURSES</a> |
+                <a href="#" style="color:white">DESSERTS</a>
+            </div>
+            <div id="menu3">
+                <input type="text">
+                <input type="button" value="go">
+            </div>
+        </div>
+        <div id="noidung">
+            <div id="noidung1">
+                <ul>
+                    <li><a href="#">Café Latte</a></li>
+                    <li><a href="#">Cappuccino</a></li>
+                    <li><a href="#">Ice cream Cafe</a></li>
+                    <li><a href="#">Order Online</a></li>
+                    <li><a href="#">Ocean Blue</a></li>
+                </ul>
+                <img src="company.png">
+            </div>
+            <div id="noidung2">
+                <div class="khungnoidung2">Starter</div>
+                <ul>
+                    <li>Đồ ăn nhanh</li>
+                    <li style="color: brown">Hải sản</li>
+                    <li>Nước uống</li>
+                </ul>
+                <a href="#" style="color: red; margin-left: 20px;">Back to top</a>
+                <div class ="khungnoidung3">Dessert</div>
+                <ul>
+                    <li>Đồ ăn chậm</li>
+                    <li style="color: brown">Đồ ăn biển</li>
+                    <li>Thảo mộc</li>
+                </ul>
+                <a href="#" style="color: red; margin-left: 20px;">Back to top</a>
+                <div class ="khungnoidung4">Information</div>
+                #table
+                <table style ="width:100%; border-spacing: 10px 5px">
+                    <tr>
+                        <td><input type ="text" placeholder ="Firstname" style="width:100%;height:40px"></td>
+                        
+                        <td><input type="text" placeholder="Last Name" style="width: 100%;height:40px"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type ="text" placeholder ="Email" style="width:100%;height:40px"></td>
+                        
+                        <td><input type="text" placeholder="Telephone" style="width: 100%;height:40px"></td>
+                        </tr>
+
+                    <tr>
+                        <td>
+                            <select style="width:100%">
+                                <option>USA</option>
+                            </select>
+                        </td>
+                        <td><input type ="radio">Vienam 
+                        <input type ="radio">Forrange</td> 
+                        </tr>
+                        <tr>
+                            <td colspan="2"><textarea placeholder="text" style ="height:48px; width:100%;"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit">
+                                <input type="submit" value ="cancel">
+                            </td>
+                        </tr>
+                </table>
+            </div>
+            <div id="noidung3">
+                <div class ="khungevent">
+                    <h2 style="color:white">Events</h2>
+                    <p style="color:white; padding: 10px">Regurla Meeting</p>
+                    <img src="meeting.png" style="height:120px;width:90%; display:block; margin:0 auto">
+                    <p style="color:white; padding: 10px; font-size: small;">Host your regular team meetings or activities in the comfort of your own private room. Charge up on Kith's aromatic coffee and delectable dishes for that extra boost in your work!</p>
+                <img src="launch.png" style="height:120px;width:90%; display:block; margin:0 auto">
+                <p style="color:white; padding: 10px; font-size: small;">Launch your product with ease in a space that truly fits its image. Create an unforgettable experience for your guests with our spacious outlets! Whether you want to host an intimate celebration or launch an event for hundreds of guests, Kith's space is customisable to your needs</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <footer style ="font-weight: bold;font-size: 30px; text-align: center; letter-spacing:5px; color:white; line-height: 95px;"><i>ABC Company -12345678 @</i></footer>
+        </div>
+    </div>
+</body>
+
+</html>

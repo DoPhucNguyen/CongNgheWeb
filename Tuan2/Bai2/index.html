@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2-Tuan2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            min-height: 700px;
+            width: 1238px;
+            border: 1px solid;
+            margin: 0 auto;
+        }
+
+        #header {
+            height: 150px;
+            width: 100%;
+            border: 1px ;
+            background-image: url('background.png');
+        }
+
+        #menu {
+            height: 50px;
+            width: 100%;
+            border: 1px ;
+            background-color: rgb(145, 148, 149);
+        }
+
+        #noidung1,
+        #noidung2,
+        #noidung3 {
+            min-height: 550px;
+            width: 412px;
+            border: 1px ;
+            float: left;
+        }
+
+        #footer {
+            height: 75px;
+            width: 100%;
+            border: 1px ;
+            clear: both; /* Đảm bảo xả float chuẩn xác */
+            background-color: #a8a8a8;
+        }
+
+        #menu a {
+            color: white;
+            margin-left: 25px;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 50px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .khoikhoahoc {
+            margin-bottom: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div id="header">
+            <img src="logo.png" style="height:120px; width:100px; margin-left: 20px; margin-top: 15px; float: left;">
+            <div style="float: left; margin-top: 20px; margin-left: 20px;">
+                <h1 style="float: left; color:white; font-size: 32px; text-transform: uppercase; letter-spacing: 3px;">
+                    YOKO'S KITCHEN</h1>
+                <h2 style="color: white; font-weight: normal; font-size: 16px; text-transform: uppercase">Japanese Cooking Classes</h2>
+            </div>
+        </div>
+
+        <!-- MENU -->
+        <div id="menu">
+            <a href="#">Home</a>
+            <a href="#">Classes</a>
+            <a href="#">Catering</a>
+            <a href="#">About</a>
+            <a href="#">Contract</a>
+        </div>
+
+        <!-- NỘI DUNG 1 -->
+        <div id="noidung1">
+            <img src="raucai.png" style="height:170px; width:250px; margin-top: 20px; margin-left: 20px;">
+            <p style="margin-top: 20px; margin-left: 20px;">Bok Choi</p>
+            <img src="teriyaki.jpg" style="height:170px; width:250px; margin-top: 20px; margin-left: 20px;">
+            <p style="margin-top: 20px; margin-left: 20px;">Teriyaki</p>
+        </div>
+
+        <!-- NỘI DUNG 2 -->
+        <div id="noidung2">
+            <div class="khoikhoahoc">
+                <p style="text-transform: uppercase; font-size: 18px; margin-top: 30px; margin-left: 20px; margin-bottom: 3px;">
+                    Japanese Vegetarian</p>
+                <p style="color:pink; margin-left: 20px;">Five week course in London</p>
+                <p style="margin-left: 20px; margin-top: 20px;">A five week introduction to traditional Japanese
+                    vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
+            </div>
+            <div class="khoikhoahoc">
+                <p style="margin-left: 20px; font-size: 18px; text-transform: uppercase;">Sauces Masterclass</p>
+                <p style="color:pink; margin-left: 20px;">One day workshop</p>
+                <p style="margin-left: 20px; margin-top: 20px;">An intensive one-day course looking at how to create the most delicious sauces...</p>
+            </div>
+        </div>
+
+        <!-- NỘI DUNG 3 -->
+        <div id="noidung3">
+            <div style="margin-top: 20px; margin-left: 20px; margin-right: 20px;">
+                <h3 style="color: pink; font-size: 20px; margin-bottom: 15px;">Popular Recipes</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="border-bottom: 1px solid #eee; padding: 8px 0;">
+                        <a href="#" style="color: pink; text-decoration: none;">Yakitori (grilled chicken)</a>
+                    </li>
+                    <li style="border-bottom: 1px solid #eee; padding: 8px 0;">
+                        <a href="#" style="color: pink; text-decoration: none;">Tsukune (minced chicken patties)</a>
+                    </li>
+                    <li style="border-bottom: 1px solid #eee; padding: 8px 0;">
+                        <a href="#" style="color: pink; text-decoration: none;">Okonomiyaki (savory pancakes)</a>
+                    </li>
+                    <li style="border-bottom: 1px solid #eee; padding: 8px 0;">
+                        <a href="#" style="color: pink; text-decoration: none;">Mizutaki (chicken stew)</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div style="margin-top: 50px; margin-left: 20px; margin-right: 20px;">
+                <h3 style="color: pink; font-size: 20px; margin-bottom: 15px;">Contact</h3>
+                <p style="color: #555; line-height: 1.6; font-size: 15px;">
+                    Yoko's Kitchen<br>
+                    27 Redchurch Street<br>
+                    Shoreditch<br>
+                    London E2 7DP
+                </p>
+            </div>
+        </div>
+
+        
+        <div id="footer">
+            <p style="color: white; line-height: 75px; margin-left: 20px; font-size: 14px;">© 2011 Yoko's Kitchen</p>
+        </div>
+    </div> 
+</body>
+
+</html>

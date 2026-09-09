@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerBox 360</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #container {
+            border: 2px solid gray;
+            width: 1200px;
+            min-height: 780px;
+            margin: 0 auto;
+        }
+        
+        #header1 {
+            width: 100%;
+            height: 150px;
+            background-color: #294E79;
+            position: relative;
+            color: white;
+        }
+        
+        #header1 img {
+            height: 110px;
+            width: 110px;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        
+        #header1 h1 {
+            position: absolute;
+            left: 120px;
+            top: 30px;
+            font-family: Georgia;
+        }
+        
+        #header1 p {
+            position: absolute;
+            left: 120px;
+            top: 80px;
+            font-family: Georgia;
+        }
+        
+        #header1 ul {
+            position: absolute;
+            right: 10px;
+            list-style: none;
+            bottom: 0;
+        }
+        
+        #header1 ul li {
+            display: inline-block;
+            height: 40px;
+            background-color: rgb(52, 52, 185);
+            padding: 8px;
+            font-size: 20px;
+        }
+        
+        #header1 ul li a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-family: Georgia;
+        }
+        
+        #header1 #ser {
+            position: absolute;
+            right: 100px;
+            top: 10px;
+            width: 250px;
+            height: 35px;
+            background-color: #162f4c;
+            border: 1px solid;
+            font-size: 16px;
+            padding-left: 10px;
+            color: white;
+        }
+        
+        #header1 #go {
+            position: absolute;
+            right: 40px;
+            top: 10px;
+            height: 35px;
+            width: 45px;
+            color: white;
+            background-color: #162f4c;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+         ::-webkit-input-placeholder {
+            color: antiquewhite;
+        }
+        /* SỬA: Đổi height: 600px thành min-height để không vỡ khung */
+        
+        #content {
+            width: 70%;
+            min-height: 600px;
+            float: left;
+        }
+        
+        #content #left {
+            width: 60%;
+            float: left;
+            padding-right: 15px;
+            padding-left: 10px;
+        }
+        
+        #content #left p {
+            font-style: italic;
+            color: red;
+            text-shadow: 10px 5px 10px green;
+            font-size: 18px;
+            padding: 20px 0;
+            font-family: Georgia;
+        }
+        
+        #content h2 {
+            font-size: 23px;
+            padding: 20px;
+            color: rgb(107, 100, 100);
+            border-bottom: 3px dashed rgb(107, 100, 100);
+            font-family: Georgia;
+        }
+        
+        #content #right {
+            width: 40%;
+            float: left;
+            padding-left: 10px;
+        }
+        /* SỬA: Đổi height: 600px thành min-height */
+        
+        #aside1 {
+            width: 30%;
+            min-height: 600px;
+            float: left;
+            padding: 20px 10px;
+        }
+        
+        #aside1 .khungnd {
+            background-color: #f8f8f8;
+            padding: 15px;
+            width: 100%;
+            margin-top: 30px;
+        }
+        
+        #footer1 {
+            width: 100%;
+            height: 70px;
+            clear: both;
+            background-color: #162f4c;
+        }
+        
+        #footer1 p {
+            color: white;
+            font-style: italic;
+            margin-left: 5px;
+            font-size: 18px;
+            line-height: 70px;
+        }
+        /* SỬA: Đổi #khoinoidung thành .khoinoidung */
+        
+        .khoinoidung {
+            margin-bottom: 25px;
+            line-height: 1.4;
+            color: #555555;
+            font-size: 16px;
+            font-family: Georgia;
+        }
+        
+        #aside1 h2 {
+            font-size: 20px;
+            padding: 20px;
+            color: rgb(107, 100, 100);
+            border-bottom: 3px dashed rgb(107, 100, 100);
+            font-family: Georgia;
+        }
+        
+        #aside1 img {
+            padding: 5px;
+            width: 300px;
+            height: 170px;
+            border: 1px solid #ce90bc;
+            margin-top: 15px;
+        }
+        
+        #aside1 p {
+            font-size: 16px;
+            font-family: Georgia;
+            color: rgb(107, 100, 100);
+        }
+        
+        #aside1 #docthem {
+            margin-top: 20px;
+            text-align: right;
+            display: block;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #294E79;
+        }
+        /* --- CSS CHO FORM FLEXBOX --- */
+        
+        .formrows {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .formgroup {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .formgroup label {
+            font-family: Georgia;
+            margin-bottom: 5px;
+        }
+        
+        .formgroup input,
+        .formgroup textarea {
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        .formbutton {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .formbutton input {
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header1">
+            <img src="flower.png" alt="Logo">
+            <h1>Flower Box 360</h1>
+            <p>...to get your daily dose of luxury roses!</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Promotion</a></li>
+                <li><a href="#">Gift Baskets</a></li>
+                <li><a href="#">Flowers Services</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <input type="search" id="ser" name="ser" placeholder="Search the site...">
+            <input type="submit" id="go" value="go">
+        </div>
+
+        <div id="content">
+            <h2>Why Not Contact Us Today!</h2>
+            <div id="left">
+                <p>For FlowerBox 360 shoppers, that means not only can you send your friends and loved ones the highest quality flowers found online, but that you can do so at a great value.</p>
+                <form>
+                    <div class="formrows">
+                        <div class="formgroup">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="formgroup">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email">
+                        </div>
+                    </div>
+                    <div class="formrows">
+                        <div class="formgroup">
+                            <label for="tel">Telephone:</label>
+                            <input type="tel" id="tel" name="tel">
+                        </div>
+                        <div class="formgroup">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                    </div>
+                    <div class="formgroup">
+                        <label for="mes">Message:</label>
+                        <textarea id="mes" name="mes" rows="5"></textarea>
+                    </div>
+                    <div class="formbutton">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </div>
+
+            <div id="right">
+                <h2>FlowerBox 360 Info!</h2>
+                <!-- SỬA: Đổi id thành class và thêm <br> để xuống dòng đẹp mắt -->
+                <p class="khoinoidung">
+                    <strong>Operating Hours:</strong><br> Monday-Friday: 9:00am-5:00pm<br> Saturday: 9:00am-1:00pm<br> Sunday: Closed (No Deliveries)<br> ORDER ONLINE 24/7
+                </p>
+                <p class="khoinoidung">
+                    Software Engineering Dept.<br> Information Technology Faculty<br> First Floor, H Building
+                </p>
+                <p class="khoinoidung">
+                    12 Nguyen Van Bao St., Ward 4,<br> Go Vap District, Ho Chi Minh City<br> Tel: 0283.8940 390<br> Fax: 0283.9940 954
+                </p>
+            </div>
+        </div>
+
+        <div id="aside1">
+            <div class="khungnd">
+                <h2>Discount & Specials</h2>
+                <img src="rose.png" alt="Rose">
+                <p>
+                    FlowerBox 360 offers many great discounts throughout the year, from coupons and coupon codes, to promo codes and other savings. We also offer military flower discounts to our wonderful troops!
+                </p>
+                <a href="#" id="docthem">Read more &gt;&gt;</a>
+            </div>
+        </div>
+
+        <div id="footer1">
+            <p>Copyright © 2017 - All Rights Reserved - Software Engineering Department - Industrial University of Ho Chi Minh City</p>
+        </div>
+    </div>
+</body>
+
+</html>

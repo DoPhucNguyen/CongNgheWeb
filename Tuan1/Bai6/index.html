@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai6</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .frame {
+            height: 900px;
+            width: 1000px;
+            margin: 0 auto;
+            padding: 5px 65px;
+            background-color: rgb(153, 205, 253);
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .intro {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="frame">
+
+        <img src="logo.jpg" style="height: 100px" class="logo">
+
+        <h1>Registration Form</h1>
+
+        <p class="intro">
+            Register your Jackson Electronics product here
+        </p>
+
+        <table>
+
+            <!-- First Name / Last Name -->
+            <tr>
+                <td>First Name:</td>
+
+                <td>
+                    <input type="text" style="width: 120px;">
+                </td>
+
+                <td>
+                    Last Name:
+                    <input type="text" style="width: 110px;">
+                </td>
+            </tr>
+
+
+            <!-- Address 1 -->
+            <tr>
+                <td>Address #1:</td>
+
+                <td colspan="2">
+                    <input type="text" style="width: 210px;">
+                </td>
+            </tr>
+
+
+            <!-- Address 2 -->
+            <tr>
+                <td>Address #2:</td>
+
+                <td colspan="2">
+                    <input type="text" style="width: 210px;">
+                </td>
+            </tr>
+
+
+            <!-- City / State / Zip -->
+            <tr>
+                <td>City:</td>
+
+                <td>
+                    <input type="text">
+                </td>
+
+                <td>
+                    State:
+                    <input type="text" style="width: 40px;">
+
+                    Zip:
+                    <input type="text" style="width: 70px;">
+                </td>
+            </tr>
+
+
+            <!-- Country -->
+            <tr>
+                <td>Country:</td>
+
+                <td>
+                    <input type="text" value="United States">
+                </td>
+            </tr>
+
+
+            <!-- Line -->
+            <tr>
+                <td colspan="3">
+                    <hr>
+                </td>
+            </tr>
+
+
+            <!-- Product -->
+            <tr>
+                <td>Product:</td>
+
+                <td>
+                    <select style="width: 120px;">
+                        <option>ScanMaster</option>
+                        <option>Printer</option>
+                        <option>Monitor</option>
+                        <option>Keyboard</option>
+                    </select>
+                </td>
+            </tr>
+
+
+            <!-- Date Purchased -->
+            <tr>
+                <td>Date Purchased:</td>
+
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+
+
+            <!-- Serial -->
+            <tr>
+                <td>Serial #:</td>
+
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+
+
+            <!-- Used for -->
+            <tr>
+              <td rowspan ="3">
+                Used for:
+              </td>
+
+                <td>
+                    <input type="radio" name="used">
+                    Home
+                </td>
+
+                <td>
+                    <input type="radio" name="used">
+                    Educational Institution
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <input type="radio" name="used">
+                    Business
+                </td>
+
+                <td>
+                    <input type="radio" name="used">
+                    Other
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <input type="radio" name="used">
+                    Government
+                </td>
+            </tr>
+
+
+            <!-- System -->
+            <tr>
+                <td rowspan="2">
+                    System (check all that apply):
+                </td>
+
+                <td>
+                    <input type="checkbox">
+                    Windows
+                </td>
+
+                <td>
+                    <input type="checkbox">
+                    UNIX
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <input type="checkbox">
+                    Macintosh
+                </td>
+
+                <td>
+                    <input type="checkbox">
+                    Other
+                </td>
+            </tr>
+
+
+            <!-- Line -->
+            <tr>
+                <td colspan="3">
+                    <hr>
+                </td>
+            </tr>
+
+
+            <!-- Comments -->
+            <tr>
+                <td style="vertical-align: top;">
+                    Comments?:
+                </td>
+
+                <td colspan="2">
+                    <textarea rows="7" cols="45"></textarea>
+                </td>
+            </tr>
+
+        </table>
+
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button type="submit">
+                Click to register
+            </button>
+
+            <button type="reset">
+                Click to cancel
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

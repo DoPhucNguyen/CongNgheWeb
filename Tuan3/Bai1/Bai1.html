@@ -12,11 +12,22 @@
             box-sizing: border-box;
         }
 
+
         .container {
             width: 1100px;
             background: linear-gradient(to bottom, #87CEEB, #4682B4);
             margin: 0 auto;
         }
+
+
+        
+        .container {
+            width: 1200px;
+            min-height: 600px;
+            background: linear-gradient(to bottom, #87CEEB, #4682B4);
+            margin: 0 auto;
+        }
+        
 
         .header {
             width: 100%;
@@ -26,6 +37,9 @@
             position: relative;
         }
 
+
+        
+
         .header li {
             list-style: none;
             display: inline-block;
@@ -33,6 +47,7 @@
             margin-left: 15px;
             font-size: 20px;
         }
+
 
         .header li a {
             text-decoration: none;
@@ -54,16 +69,40 @@
 
         .left {
             flex: 1;
+        }
+        
+        .header li a {
+            text-decoration: none;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .content {
+            display: flex;
+            width: 100%;
+            min-height: 600px;
+        }
+        
+        .left {
+            flex: 1;
+            min-height: 600px;
+
             padding: 8px;
             margin-top: 25px;
             margin-bottom: 20px;
         }
+
+
+
+        
 
         .left h1 {
             color: white;
             flex: 1;
             font-size: 35px;
         }
+
 
         .right {
             flex: 1;
@@ -90,6 +129,15 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+
+        
+        .right {
+            flex: 1;
+            min-height: 600px;
+            padding: 10px;
+        }
+        
+
         #logo {
             right: 15px;
             top: 5px;
@@ -98,6 +146,7 @@
             font-weight: bold;
             color: white;
             font-family: Arial, sans-serif;
+
             text-shadow: 10px 10px 10px #1337eb, 2px 2px 0px #1b58c1;
         }
 
@@ -169,6 +218,9 @@
         .form_group textarea{
             padding: 3px 10px;
             font-size: 13px;
+
+            text-shadow: 10px 10px 10px #0f2b5c, 2px 2px 0px #0f2b5c;
+
         }
     </style>
 </head>
@@ -188,6 +240,7 @@
         <div class="content">
             <div class="left">
                 <h1>Registration Information</h1>
+
                 <p>Start your travel planning now with our on-line tour regstration
                     form. Just tell us a little about yourself and your group and one of our travel
                     experts will contact you to create the perfect custom built for your group's needs .</p>
@@ -235,6 +288,12 @@
             <p>2016 Sky World Tours. All rights reserved.</p>
             <p>COntact information: Student Name | StudentID | Testing Date </p>
         </div>
+
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="footer"></div>
+
     </div>
 </body>
 

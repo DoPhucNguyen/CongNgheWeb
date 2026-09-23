@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2a</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .bg-checkout {
+            background-color: #f4f8ff;
+        }
+
+        .payment-card {
+            max-width: 480px;
+            border: 2px solid #cce5ff;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center mt-5">
+        <div class="payment-card w-100">
+            <div class="bg-checkout p-4">
+                <h4 class="text-secondary fw-normal">Checkout</h4>
+                <hr class="text-muted">
+                <table class="table table-borderless bg-transparent mb-0">
+                    <tbody>
+                        <tr>
+                            <td class="ps-0">
+                                <strong>Product 1</strong>
+                                <div class="text-muted small">Lorem ipsum dolor sit amet</div>
+                            </td>
+                            <td class="pe-0 text-end align-top"><strong>$200</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="ps-0">
+                                <strong>Product 2</strong>
+                                <div class="text-muted small">Lorem ipsum dolor sit amet</div>
+                            </td>
+                            <td class="pe-0 text-end align-top"><strong>$120</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr class="text-muted">
+                <div class="d-flex justify-content-between align-items-center">
+                    <strong>Total</strong>
+                    <strong class="">$320</strong>
+                </div>
+            </div>
+            <div class="p-4 bg-white mt-3">
+                <h4>Credit Card Detail</h4>
+                <hr class="text-muted mb-4">
+                <form>
+                    <div class="row g-3 mb-3">
+                        <div class="col-7">
+                            <label class="form-label text-uppercase small fw-bold">Card Holder</label>
+                            <input type="text" class="form-control" placeholder="Card Holder">
+                        </div>
+                        <div class="col-5">
+                            <label class="form-label text-uppercase small fw-bold">Expiration Date</label>
+                            <div class="d-flex align-items-center gap-1">
+                                <input type="text" class="form-control text-center px-1" placeholder="MM">
+                                <input type="text" class="form-control text-center px-1" placeholder="YY">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3 mb-3">
+                        <div class="col-7">
+                            <label class="form-label text-uppercase small fw-bold">Card Number</label>
+                            <input type="text" class="form-control text-center px-1" placeholder="Card Number">
+                        </div>
+                        <div class="col-5">
+                            <label class="form-label text-uppercase small fw-bold">CVC</label>
+                            <input type="text" class="form-control text-center px-1 w-50" placeholder="CVC">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary w-100 py-2">Proceed</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

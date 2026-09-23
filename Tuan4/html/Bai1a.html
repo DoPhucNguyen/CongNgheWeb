@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bai1A</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">z
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -14,12 +15,13 @@
             <!-- Cột 1 -->
             <div class="col-md-4">
                 <div class="thumbnail img-thumbnail">
-                    <img src="../img/MEOW.jpg" alt="Meow" class="img-fluid" style="width:100%">
+                    <img src="../img/LONGc.jpg" alt="Meow" class="img-fluid" style="height: 330px;width:430px ;">
                     <div class="caption p-2">
-                        <h3>Meats</h3>
-                        <p>Bacon ipsum dolor sit amet sirloin pancetta shoulder tongue doner, shank sausage.</p>
+                        <h3>Bé Mặp</h3>
+                        <p>Bà con thương tình cho tui chút bánh rán,.....</p>
                         <p>
-                            <a href="#" class="btn btn-primary" role="button">Eat now!</a>
+                            <button type="button" class="btn btn-primary " data-bs-toggle="modal"
+                                data-bs-target="#Nut1">Bón cho Long</button>
                             <a href="#" class="btn btn-default btn-outline-secondary" role="button">Later...</a>
                         </p>
                     </div>
@@ -57,7 +59,44 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="Nut1" tabindex="-1" aria-hidden="True">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Xác nhận cho mèo ăn!!</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-between align-items-center mt-2">
+                        <div class="col-4">
+                            <label class="form-label fw-bold small">Nhập tên con mèo:</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" class="form-control" placeholder="Doraemon ?" required>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between align-items-center mt-2">
+                        <div class="col-4">
+                            <label class="form-label fw-bold small">Nhập số bánh rán:</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="number" class="form-control" placeholder="ba cái ?">
+                        </div>
+                    </div>
 
+                </div>
+                <div class="modal-footer">
+                    <div class="row align-items-center g-2">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-success">Gửi</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bia2d_FORM</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container border p-4 mt-4" style="max-width: 700px;">
+        <!-- 1. Thêm thẻ form có class "needs-validation" và thuộc tính "novalidate" -->
+        <form class="row g-3 needs-validation" novalidate>
+            
+            <!-- Hàng 1 -->
+            <div class="col-md-4">
+                <label class="form-label">First name</label>
+                <input type="text" class="form-control" value="Mark" required>
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label">Last name</label>
+                <input type="text" class="form-control" value="Otto" required>
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label">Username</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="Username" required>
+                    <div class="invalid-feedback">Please choose a username.</div>
+                </div>
+            </div>
+
+            <!-- Hàng 2 (Bỏ thẻ div class="row" dư thừa) -->
+            <div class="col-md-6">
+                <label class="form-label">City</label>
+                <input type="text" class="form-control" placeholder="City" required>
+                <div class="invalid-feedback">Please provide a valid city.</div>
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label">State</label>
+                <input type="text" class="form-control" placeholder="State" required>
+                <div class="invalid-feedback">Please provide a valid state.</div>
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label">Zip</label>
+                <input type="text" class="form-control" placeholder="Zip" required>
+                <div class="invalid-feedback">Please provide a valid Zip.</div>
+            </div>
+
+            <!-- Hàng 3: Checkbox -->
+            <div class="col-12">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="terms" required>
+                    <label class="form-check-label" for="terms">Agree to terms and conditions</label>
+                    <div class="invalid-feedback">You must agree before submitting.</div>
+                </div>
+            </div>
+
+            <!-- Hàng 4: Nút Submit -->
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit form</button>
+            </div>
+
+        </form> <!-- Đóng thẻ form -->
+    </div>
+
+    <script>
+        document.querySelector('.needs-validation').addEventListener('submit', function (e) {
+            if (!this.checkValidity()) {
+                e.preventDefault(); // Ngừng gửi form nếu có lỗi
+            }
+            this.classList.add('was-validated'); // Hiện viền xanh/đỏ tương ứng
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai3_BOOTSTRAP</title>
+    <!-- Đường dẫn Bootstrap theo yêu cầu -->
+    <link rel="stylesheet" href="../tuan3/css/bootstrap.min.css">
+    <style>
+        /* CSS tùy chỉnh cho màu sắc đặc trưng của Bài 3 */
+        .bg-autumn-header {
+            background-color: rgb(130, 56, 4);
+        }
+        .text-autumn-title {
+            color: rgb(9, 141, 9);
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.9), 0 0 12px rgba(255, 255, 255, 0.8);
+            letter-spacing: 3px;
+        }
+        .text-autumn-gold {
+            color: rgb(164, 154, 11);
+        }
+        .text-autumn-italic {
+            color: rgb(214, 202, 31);
+        }
+        .text-autumn-link {
+            color: rgb(73, 104, 11);
+        }
+        .bg-bisque {
+            background-color: bisque;
+        }
+        /* Ô input dạng đường gạch chân dưới giống mẫu */
+        .input-underline {
+            border: none;
+            border-bottom: 1px solid #aaa;
+            border-radius: 0;
+            padding-left: 0;
+        }
+        .input-underline:focus {
+            box-shadow: none;
+            border-bottom-color: rgb(176, 162, 14);
+        }
+        .btn-autumn {
+            background-color: rgb(176, 162, 14);
+            color: white;
+        }
+        .btn-autumn:hover {
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container bg-white border p-0 my-3 shadow-sm">
+        
+        <!-- HEADER -->
+        <header class="bg-autumn-header py-2 px-3">
+            <h1 class="text-autumn-title fs-3 fw-bold text-uppercase m-0">AUTUMN TRAVEL COMPANY</h1>
+        </header>
+
+        <!-- MENU -->
+        <nav class="border-bottom">
+            <ul class="nav px-2">
+                <li class="nav-item"><a class="nav-link text-dark fw-normal fs-5 px-3" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-normal fs-5 px-3" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-normal fs-5 px-3" href="#">Products</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-normal fs-5 px-3" href="#">Service</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-normal fs-5 px-3" href="#">Order</a></li>
+            </ul>
+        </nav>
+
+        <!-- BANNER -->
+        <div class="w-100">
+            <img src="../Tuan3/Bai3/line.png" alt="Banner" class="img-fluid w-100">
+        </div>
+
+        <!-- MAIN CONTENT (Chia 2 cột 6:4 bằng Grid) -->
+        <div class="row g-4 p-4">
+            
+            <!-- CỘT TRÁI: FORM ĐĂNG KÝ (Cột col-md-7 chiếm ~60%) -->
+            <div class="col-md-7">
+                <h2 class="text-autumn-gold fw-bold fs-4 mb-2">Sign up for membership benefits</h2>
+                <p class="text-autumn-italic fw-bold fst-italic small ms-3 mb-4">
+                    Our philisophical are transparency, respect, formality and responsibility. Our stimulus is your enthusiasm. Our motto is your satisfation.
+                </p>
+
+                <!-- FORM -->
+                <form class="ms-3 pe-md-4">
+                    <div class="mb-3">
+                        <input type="text" class="form-control input-underline" placeholder="Username">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control input-underline" placeholder="E-Mail">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control input-underline" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control input-underline" placeholder="Retype password">
+                    </div>
+                    
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-autumn btn-sm text-uppercase fw-bold px-4 rounded-1">sign me up</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- CỘT PHẢI: LINKS & MORE INFO (Cột col-md-5 chiếm ~40%, có đường viền bên trái) -->
+            <div class="col-md-5 border-start-md ps-md-4">
+                
+                <!-- Khung Links -->
+                <div class="bg-bisque p-3 rounded-top ms-md-2">
+                    <h2 class="fs-4 fw-bold mb-3" style="color: rgba(172, 115, 42, 0.834);">Links</h2>
+                    <ul class="ps-4 mb-0">
+                        <li class="mb-1"><a href="#" class="text-autumn-link text-decoration-none">Make your Own Tour</a></li>
+                        <li class="mb-1"><a href="#" class="text-autumn-link text-decoration-none">Maldives Tours</a></li>
+                        <li class="mb-1"><a href="#" class="text-autumn-link text-decoration-none">Nature & Adventure</a></li>
+                        <li class="mb-1"><a href="#" class="text-autumn-link text-decoration-none">Readymade Tours</a></li>
+                        <li class="mb-1"><a href="#" class="text-autumn-link text-decoration-none">Europe Tours</a></li>
+                        <li class="mb-1"><a href="#" class="text-autumn-link text-decoration-none">Rusia Tours</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section More Info -->
+                <h2 class="fs-4 fw-bold mt-4 mb-2 ms-md-2" style="color: rgba(172, 115, 42, 0.834);">More infor</h2>
+                <div class="ms-md-2 clearfix">
+                    <img src="../Tuan3/Bai3/leaf.png" alt="Leaf" class="float-start me-3 mb-2 p-1 border" style="width: 120px;">
+                    <p class="text-secondary small text-justify lh-base">
+                        Our purpose is the client who gives to us the opportunites to serve and to make known the reality arround the world
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="text-center py-2" style="background-image: url('footer.png'); background-size: cover;">
+            <p class="m-0 text-dark fw-bold fs-6" style="letter-spacing: 2px;">
+                2017 Software Engineering Department Test Date 16 Sep 2017
+            </p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2_BOOTSTRAP</title>
+    <link rel="stylesheet" href="../Tuan3/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f4f4f4;
+        }
+        .bg-header {
+            background-color: #294E79;
+        }
+        .bg-footer {
+            background-color: #162f4c;
+        }
+        .border-dashed {
+            border-bottom: 2px dashed #6b6464 !important;
+        }
+        .text-custom-title {
+            color: #6b6464;
+        }
+        .text-custom-quote {
+            color: red;
+            text-shadow: 2px 2px 5px green;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container bg-white border my-3 p-0 shadow-sm">
+        
+        <!-- HEADER -->
+        <header class="bg-header text-white p-3 position-relative">
+            <div class="row align-items-center mb-3">
+                <!-- Logo & Title -->
+                <div class="col-md-7 d-flex align-items-center">
+                    <img src="../Tuan3/Bai2/flower.png" alt="Logo" class="me-3" style="width: 90px; height: 90px;">
+                    <div>
+                        <h1 class="h2 mb-1 fw-normal">Flower Box 360</h1>
+                        <p class="mb-0 small fst-italic">...to get your daily dose of luxury roses!</p>
+                    </div>
+                </div>
+                
+                <!-- Search Box -->
+                <div class="col-md-5 d-flex justify-content-md-end mt-2 mt-md-0">
+                    <form class="d-flex" role="search">
+                        <input class="form-control form-control-sm me-1 rounded-0 bg-dark text-white border-secondary" 
+                               type="search" placeholder="Search the site..." aria-label="Search">
+                        <button class="btn btn-sm btn-outline-light rounded-0" type="submit">go</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Navigation Bar -->
+            <div class="row mt-2">
+                <div class="col-12">
+                    <ul class="nav bg-primary p-1">
+                        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Promotion</a></li>
+                        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Gift Baskets</a></li>
+                        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Flowers Services</a></li>
+                        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN BODY CONTENT -->
+        <div class="row p-3 g-4">
+            
+            <!-- LEFT MAIN CONTENT (70% ~ col-lg-8) -->
+            <main class="col-lg-8">
+                <h2 class="text-custom-title fs-4 pb-2 border-dashed mb-3">Why Not Contact Us Today!</h2>
+                
+                <div class="row g-3">
+                    <!-- Form Section (60% của phần Content ~ col-md-7) -->
+                    <div class="col-md-7">
+                        <p class="text-custom-quote mb-3">
+                            For FlowerBox 360 shoppers, that means not only can you send your friends and loved ones the highest quality flowers found online, but that you can do so at a great value.
+                        </p>
+                        
+                        <form>
+                            <div class="row mb-2 g-2">
+                                <div class="col-6">
+                                    <label for="name" class="form-label mb-1">Name:</label>
+                                    <input type="text" id="name" class="form-control form-control-sm rounded-0">
+                                </div>
+                                <div class="col-6">
+                                    <label for="email" class="form-label mb-1">Email:</label>
+                                    <input type="email" id="email" class="form-control form-control-sm rounded-0">
+                                </div>
+                            </div>
+
+                            <div class="row mb-2 g-2">
+                                <div class="col-6">
+                                    <label for="tel" class="form-label mb-1">Telephone:</label>
+                                    <input type="tel" id="tel" class="form-control form-control-sm rounded-0">
+                                </div>
+                                <div class="col-6">
+                                    <label for="subject" class="form-label mb-1">Subject:</label>
+                                    <input type="text" id="subject" class="form-control form-control-sm rounded-0">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="mes" class="form-label mb-1">Message:</label>
+                                <textarea id="mes" class="form-control form-control-sm rounded-0" rows="5"></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="btn btn-secondary btn-sm me-2 rounded-0">Submit</button>
+                                <button type="reset" class="btn btn-secondary btn-sm rounded-0">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Info Section (40% của phần Content ~ col-md-5) -->
+                    <div class="col-md-5">
+                        <h2 class="text-custom-title fs-5 pb-2 border-dashed mb-3">FlowerBox 360 Info!</h2>
+                        
+                        <div class="text-muted small mb-3 lh-base">
+                            <strong class="text-dark">Operating Hours:</strong><br>
+                            Monday-Friday: 9:00am-5:00pm<br>
+                            Saturday: 9:00am-1:00pm<br>
+                            Sunday: Closed (No Deliveries)<br>
+                            <span class="fw-bold">ORDER ONLINE 24/7</span>
+                        </div>
+
+                        <div class="text-muted small mb-3 lh-base">
+                            Software Engineering Dept.<br>
+                            Information Technology Faculty<br>
+                            First Floor, H Building
+                        </div>
+
+                        <div class="text-muted small lh-base">
+                            12 Nguyen Van Bao St., Ward 4,<br>
+                            Go Vap District, Ho Chi Minh City<br>
+                            Tel: 0283.8940 390<br>
+                            Fax: 0283.9940 954
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- RIGHT ASIDE (30% ~ col-lg-4) -->
+            <aside class="col-lg-4">
+                <div class="bg-light p-3 border rounded">
+                    <h2 class="text-custom-title fs-5 pb-2 border-dashed mb-3">Discount & Specials</h2>
+                    <img src="rose.png" alt="Rose" class="img-fluid border p-1 bg-white mb-3 d-block mx-auto">
+                    <p class="text-muted small lh-base mb-3">
+                        FlowerBox 360 offers many great discounts throughout the year, from coupons and coupon codes, to promo codes and other savings. We also offer military flower discounts to our wonderful troops!
+                    </p>
+                    <a href="#" class="d-block text-end fw-bold text-decoration-none text-primary fs-6">Read more &gt;&gt;</a>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="bg-footer text-white text-center py-3">
+            <p class="mb-0 small fst-italic">
+                Copyright © 2017 - All Rights Reserved - Software Engineering Department - Industrial University of Ho Chi Minh City
+            </p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

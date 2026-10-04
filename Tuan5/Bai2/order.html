@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <title>Order</title>
+</head>
+
+<body>
+
+    <!-- HOME BACKGROUND -->
+    <div class="container-fluid p-0"
+         style="
+            min-height: 500px;
+            background-image: url(../Bai2/images/hero-bg.jpg);
+            background-size: cover;
+            background-position: center;
+         ">
+
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+
+            <div class="container">
+
+                <a href="home.html" class="navbar-brand">
+                    Feane
+                </a>
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link text-white">
+                            HOME
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link text-white">
+                            MENU
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-white">
+                            ABOUT
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="book.html" class="nav-link text-white">
+                            BOOK TABLE
+                        </a>
+                    </li>
+
+                </ul>
+
+                <button class="btn rounded-5 text-white px-4"
+                        style="background-color: #fcbe37;"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal">
+                    Order Online
+                </button>
+
+            </div>
+
+        </nav>
+
+        <div class="container text-white pt-5">
+
+            <div class="col-md-5 mt-5">
+
+                <h1 style="font-family: cursive;">
+                    Fast Food Restaurant
+                </h1>
+
+                <p>
+                    Doloremque, itaque aperiam facilis rerum,
+                    commodi, temporibus sapiente ad mollitia
+                    laborum quam quisquam esse error unde.
+                </p>
+
+                <button class="btn rounded-5 text-white px-4"
+                        style="background-color: #fcbe37;"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal">
+                    Order Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ORDER MODAL -->
+    <div class="modal fade" id="orderModal"
+         tabindex="-1" aria-labelledby="orderTitle"
+         aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <!-- HEADER -->
+                <div class="modal-header">
+
+                    <h5 class="modal-title text-warning"
+                        id="orderTitle">
+                        Order
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close">
+                    </button>
+
+                </div>
+
+
+                <!-- BODY -->
+                <div class="modal-body">
+
+                    <form>
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Telephone
+                            </label>
+
+                            <input type="tel"
+                                   class="form-control"
+                                   placeholder="Telephone">
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Email
+                            </label>
+
+                            <input type="email"
+                                   class="form-control"
+                                   placeholder="Email">
+
+                        </div>
+
+
+                        <div class="form-check mb-3">
+
+                            <input type="checkbox"
+                                   class="form-check-input"
+                                   id="checkOrder">
+
+                            <label class="form-check-label"
+                                   for="checkOrder">
+                                Check me out
+                            </label>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <!-- FOOTER -->
+                <div class="modal-footer">
+
+                    <button type="button"
+                            class="btn text-white"
+                            style="background-color: #fcbe37;">
+                        Order
+                    </button>
+
+                    <button type="button"
+                            class="btn text-white"
+                            style="background-color: #fcbe37;"
+                            data-bs-dismiss="modal">
+                        Close
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- AUTO OPEN MODAL -->
+    <script>
+        window.addEventListener("load", function () {
+            var orderModal = new bootstrap.Modal(
+                document.getElementById("orderModal")
+            );
+
+            orderModal.show();
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <title>Book A Table</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a href="home.html" class="navbar-brand">
+                Feane
+            </a>
+
+            <div class="navbar-collapse">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item mx-2">
+                        <a href="home.html" class="nav-link text-white">
+                            HOME
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a href="menu.html" class="nav-link text-white">
+                            MENU
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a href="about.html" class="nav-link text-white">
+                            ABOUT
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a href="book.html" class="nav-link text-warning">
+                            BOOK TABLE
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <form class="d-flex">
+
+                <button class="btn">
+                    <img src="../Bai2/images/bell.png" style="width: 15px;">
+                </button>
+
+                <button class="btn">
+                    <img src="../Bai2/images/cart.png" style="width: 15px;">
+                </button>
+
+                <button class="btn">
+                    <img src="../Bai2/images/search.png" style="width: 15px;">
+                </button>
+
+                <button class="btn rounded-5 text-white px-4"
+                        style="background-color: #fcbe37;">
+                    Order Online
+                </button>
+
+            </form>
+
+        </div>
+
+    </nav>
+
+
+    <!-- BOOK TABLE -->
+    <div class="container py-5">
+
+        <div class="row">
+
+            <!-- FORM -->
+            <div class="col-6">
+
+                <h2 class="mb-4"
+                    style="font-family: cursive;">
+                    Book A Table
+                </h2>
+
+                <form>
+
+                    <div class="mb-3">
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Your Name">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Phone Number">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="email"
+                               class="form-control"
+                               placeholder="Your Email">
+                    </div>
+
+                    <div class="mb-3">
+                        <select class="form-select">
+                            <option selected>How Many persons?</option>
+                            <option>1 Person</option>
+                            <option>2 Persons</option>
+                            <option>3 Persons</option>
+                            <option>4 Persons</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <input type="date"
+                               class="form-control">
+                    </div>
+
+                    <button type="submit"
+                            class="btn rounded-5 text-white px-4"
+                            style="background-color: #fcbe37;">
+                        BOOK NOW
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- MAP -->
+            <div class="col-6">
+
+                <div class="ratio ratio-4x3">
+
+                    <iframe
+                        src="https://www.google.com/maps?q=Ho%20Chi%20Minh%20City&output=embed"
+                        style="border: 0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
